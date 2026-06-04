@@ -5,6 +5,8 @@ import Image from 'next/image';
 import { ArrowRight, Star, Quote } from 'lucide-react';
 import { getFeaturedCakes, urlFor } from '@/sanity/client';
 
+export const revalidate = 10; // Revalidate every 10 seconds
+
 export default async function Home() {
   const featuredCakes = await getFeaturedCakes();
 

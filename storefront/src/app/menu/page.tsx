@@ -3,6 +3,8 @@ import Cart from '@/components/Cart';
 import { getAllCakes } from '@/sanity/client';
 import MenuClient from './MenuClient';
 
+export const revalidate = 10;
+
 export default async function MenuPage() {
   const cakes = await getAllCakes();
 

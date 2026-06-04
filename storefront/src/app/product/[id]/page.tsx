@@ -1,4 +1,6 @@
 import Navbar from '@/components/Navbar';
+
+export const revalidate = 10; // Revalidate every 10 seconds
 import Cart from '@/components/Cart';
 import { getCakeById } from '@/sanity/client';
 import ProductClient from './ProductClient';
