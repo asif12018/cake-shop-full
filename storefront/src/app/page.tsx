@@ -72,7 +72,7 @@ export default async function Home() {
               </div>
               <div className="order-1 md:order-2 relative h-[500px] w-full rounded-sm overflow-hidden shadow-2xl">
                 <Image 
-                  src="/neer-bestseller.jpg" 
+                  src="/neer-product.png" 
                   alt="Neer Natural Hair Oil" 
                   fill 
                   className="object-cover"
