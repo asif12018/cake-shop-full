@@ -9,7 +9,7 @@ export default function Cart() {
 
   const handleCheckout = () => {
     // You can replace this with your actual WhatsApp number
-    const phoneNumber = '8801700000000'; 
+    const phoneNumber = '8801963833098'; 
     
     let message = 'Hello Neer Natural Care! I would like to place an order:\\n\\n';
     
