@@ -5,7 +5,7 @@ import { X, Minus, Plus, ShoppingBag } from 'lucide-react';
 import Image from 'next/image';
 
 export default function Cart() {
-  const { items, isOpen, setIsOpen, removeItem, updateQuantity, getTotalPrice } = useCartStore();
+  const { items, isOpen, setIsOpen, removeItem, updateQuantity, getTotalPrice, clearCart } = useCartStore();
 
   const handleCheckout = () => {
     // You can replace this with your actual WhatsApp number
@@ -23,6 +23,10 @@ export default function Cart() {
     
     const encodedMessage = encodeURIComponent(message);
     window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');
+    
+    // Clear the cart and close the sidebar after redirecting to WhatsApp
+    clearCart();
+    setIsOpen(false);
   };
 
   if (!isOpen) return null;
